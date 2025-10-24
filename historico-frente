@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Escolar - Frente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="folhaA4">
+        
+        <div class="historico-grid-frente">
+            
+            <div class="item celula-titulo logo">(Logo)</div>
+            <div class="item celula-titulo gov">GOVERNO DO ESTADO</div>
+            <div class="item celula-titulo sec">SECRETARIA DE EDUCAÇÃO</div>
+            
+            <div class="item titulo-doc">HISTÓRICO ESCOLAR</div>
+            
+            <div class="item label">Nome do Aluno:</div>
+            <div class="item valor nome-completo" id="out-nome">[Nome do Aluno]</div>
+            
+            <div class="item label">Data Nasc:</div>
+            <div class="item valor" id="out-dataNasc">[Data]</div>
+
+            <div class="item label">Naturalidade:</div>
+            <div class="item valor" id="out-naturalidade">[Naturalidade]</div>
+            
+            <div class="item label">UF:</div>
+            <div class="item valor" id="out-ufNaturalidade">[UF]</div>
+            
+            <div class="item label">Nacionalidade:</div>
+            <div class="item valor" id="out-nacionalidade">[Nacionalidade]</div>
+
+            </div> <a href="historico-verso.html" class="btn no-print">Ir para o Verso</a>
+    </div>
+
+    </body>
+</html>
