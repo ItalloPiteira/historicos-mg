@@ -77,10 +77,9 @@ form select {
 /* O Grid do Histórico (Frente) */
 .historico-grid-frente {
     display: grid;
-    /* Vamos definir 12 colunas. É um número flexível 
-       para dividir o layout (como 2, 3, 4, 6 colunas) 
+    /* Definindo as 42 colunas da Versão Oficial
     */
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(42, 1fr);
     border: 2px solid black; /* Borda externa do histórico */
 }
 
@@ -99,33 +98,55 @@ form select {
    A soma em cada "linha" visual deve ser 12.
 */
 
-/* Linha 1: Cabeçalho (Ex: 2 + 5 + 5 = 12 colunas) */
+/*Cabeçalho (Ex: 2 + 5 + 5 = 12 colunas)
 .item.logo { grid-column: span 2; }
 .item.gov { grid-column: span 5; text-align: center; font-weight: bold; }
 .item.sec { grid-column: span 5; text-align: center; font-weight: bold; }
+*/
 
-/* Linha 2: Título (Ocupa as 12 colunas) */
+/*Título (Histórico Escolar/Ensino Médio/Fundamental) */
 .item.titulo-doc {
-    grid-column: span 12;
+    grid-column: span 42;
     text-align: center;
     font-size: 14pt;
     font-weight: bold;
     padding: 10px;
 }
 
-/* Linha 3: Nome e Data (Ex: Label=2, Valor=6, Label=2, Valor=2 = 12 colunas) */
+/*Nome e Data (Ex: Label=2, Valor=6, Label=2, Valor=2 = 12 colunas) */
 .item.label { font-weight: bold; background-color: #f9f9f9; }
 .item.nome-completo { grid-column: span 6; }
 /* (O label "Nome do Aluno" usa 'span 2' por padrão) */
 /* (O label "Data Nasc" usa 'span 2' por padrão) */
 /* (O valor "DataNasc" usa 'span 2' por padrão) */
 
-/* Linha 4: (Ex: L=2, V=3, L=1, V=1, L=2, V=3 = 12 colunas) */
+/*(Ex: L=2, V=3, L=1, V=1, L=2, V=3 = 12 colunas) */
 .item.valor[id="out-naturalidade"] { grid-column: span 3; }
 .item.label[for="ufNaturalidade"] { grid-column: span 1; }
 .item.valor[id="out-ufNaturalidade"] { grid-column: span 1; }
 .item.label[for="nacionalidade"] { grid-column: span 2; }
 .item.valor[id="out-nacionalidade"] { grid-column: span 3; }
+
+/*ETAPAS*/
+/*linha superior*/
+.item.curso {grid-column: span 8}
+.item.subtitulo-bnc {grid-column: span 13}
+.item.subtitulo-itinerario {grid-column: span 16}
+.item.coluna-total-1 {grid-row: span 10}
+
+/*estabelecimento-etapa*/
+.item.etapa-ano {grid-row: span 13}
+.item.etapa-titulo-g {grid-column: span 8} /*pintar de cinza*/
+.item.etapa-g {grid-column: span 8}
+.item.etapa-titulo-p {grid-column: span 4} /*pintar de cinza*/
+.item.etapa-p {grid-column: span 4}
+.item.etapa-titulo-cha {grid-column: span 4} /*pintar de cinza*/
+.item.etapa-cha {grid-column: span 4}
+.item.observacoes-etapa {grid-column: span 8}
+.item.titulo-situacao-final {grid-column: span 6} /*pintar de cinza*/
+.item.situacao-final {grid-column: span 6}
+
+
 
 
 /* --- Configuração de Impressão --- */
