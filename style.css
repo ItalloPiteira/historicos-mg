@@ -77,15 +77,14 @@ form select {
 /* O Grid do Histórico (Frente) */
 .historico-grid-frente {
     display: grid;
-    /* Definindo as 42 colunas da Versão Oficial
-    */
+    border-collapse: collapse;
     grid-template-columns: repeat(42, 1fr);
-    border: 2px solid black; /* Borda externa do histórico */
+    border: 1px solid black; /* Borda externa do histórico */
 }
 
 /* Estilo padrão de cada "célula" (item) do grid */
 .historico-grid-frente > .item {
-    border: 1px solid #aaa; /* Borda interna da célula */
+    border: 1px solid black; /* Borda interna da célula */
     padding: 4px;
     box-sizing: border-box;
     min-height: 16.2px; /* Altura mínima da célula */
@@ -129,7 +128,7 @@ form select {
 
 /*ETAPAS*/
 /*linha superior*/
-.item.curso {grid-column: span 8;}
+.item.curso {grid-column: span 10;}
 .item.subtitulo-bnc {grid-column: span 13;}
 .item.subtitulo-itinerario {grid-column: span 16;}
 .item.coluna-total-1 {
@@ -183,10 +182,10 @@ form select {
 .item.conhecimento-3 {grid-row: span 3; grid-column: span 3;}
 .item.conhecimento-4 {grid-row: span 3; grid-column: span 4;}
 .item.conhecimento-6 {grid-row: span 3; grid-column: span 6;}
-.item.vazio {background-color: #f9f9f9;}
-.item.vazio-3 {grid-row: span 3; background-color: #f9f9f9;}
-.item.vazio-cha-3 {grid-column: span 3; background-color: #f9f9f9;}
-.item.vazio-cha-2 {grid-column: span 2; background-color: #f9f9f9;}
+.item.vazio {background-color: #8d8d8d;}
+.item.vazio-3 {grid-row: span 3; background-color: #acacac;}
+.item.vazio-cha-3 {grid-column: span 3; background-color: #8d8d8d;}
+.item.vazio-cha-2 {grid-column: span 2; background-color: #8d8d8d;}
 
 
 /* --- Configuração de Impressão --- */
