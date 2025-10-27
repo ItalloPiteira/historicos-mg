@@ -129,24 +129,35 @@ form select {
 
 /*ETAPAS*/
 /*linha superior*/
-.item.curso {grid-column: span 8}
-.item.subtitulo-bnc {grid-column: span 13}
-.item.subtitulo-itinerario {grid-column: span 16}
-.item.coluna-total-1 {grid-row: span 10}
+.item.curso {grid-column: span 8;}
+.item.subtitulo-bnc {grid-column: span 13;}
+.item.subtitulo-itinerario {grid-column: span 16;}
+.item.coluna-total-1 {grid-row: span 10;} /*dividir (negrito)*/
 
 /*estabelecimento-etapa*/
-.item.etapa-ano {grid-row: span 13}
-.item.etapa-titulo-g {grid-column: span 8} /*pintar de cinza*/
-.item.etapa-g {grid-column: span 8}
-.item.etapa-titulo-p {grid-column: span 4} /*pintar de cinza*/
-.item.etapa-p {grid-column: span 4}
-.item.etapa-titulo-cha {grid-column: span 4} /*pintar de cinza*/
-.item.etapa-cha {grid-column: span 4}
-.item.observacoes-etapa {grid-column: span 8}
-.item.titulo-situacao-final {grid-column: span 6} /*pintar de cinza*/
-.item.situacao-final {grid-column: span 6}
+.item.etapa-ano {grid-row: span 13;}
+.item.etapa-titulo-g {grid-column: span 8; background-color: #7b7b7b;}
+.item.etapa-g {grid-column: span 8;}
+.item.etapa-titulo-p {grid-column: span 4; background-color: #7b7b7b;}
+.item.etapa-p {grid-column: span 4;}
+.item.etapa-titulo-cha {grid-column: span 4; background-color: #7b7b7b;}
+.item.etapa-cha {grid-column: span 4;}
+.item.observacoes-etapa {grid-column: span 8;}
+.item.titulo-situacao-final {grid-column: span 6; background-color: #7b7b7b;}
+.item.situacao-final {grid-column: span 6;}
 
-
+/*avaliacoes*/
+.item.apr-cha-fal {grid-column: span 3;}
+.item.notas-cha
+.item.disciplina-subtotal {grid-row: span 7;}
+.item.conhecimento-2 {grid-row: span 3; grid-column: span 2;}
+.item.conhecimento-3 {grid-row: span 3; grid-column: span 3;}
+.item.conhecimento-4 {grid-row: span 3; grid-column: span 4;}
+.item.conhecimento-6 {grid-row: span 3; grid-column: span 6;}
+.item.vazio {background-color: #f9f9f9;}
+.item.vazio-3 {grid-row: span 3; background-color: #f9f9f9;}
+.item.vazio-cha-3 {grid-column: span 3; background-color: #f9f9f9;}
+.item.vazio-cha-2 {grid-column: span 2; background-color: #f9f9f9;}
 
 
 /* --- Configuração de Impressão --- */
