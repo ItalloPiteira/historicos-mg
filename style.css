@@ -129,10 +129,38 @@ form select {
 
 /*ETAPAS*/
 /*linha superior*/
-.item.curso {grid-column: span 10;}
-.item.subtitulo-bnc {grid-column: span 13;}
-.item.subtitulo-itinerario {grid-column: span 16;}
+.item.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;}
 .item.coluna-total-1 {
+    grid-row: span 11;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    transform: rotate(180deg);
+    transform-origin: center center;
+    font-weight: bold;}
+.item.coluna-total-2 {
+    grid-row: span 10;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    transform: rotate(180deg);
+    transform-origin: center center;
+    font-weight: bold}
+.item.coluna-cha-1 {
+    grid-row: span 11;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    transform: rotate(180deg);
+    transform-origin: center center;}
+.item.coluna-cha-2 {
     grid-row: span 10;
     writing-mode: vertical-lr;
     display: flex;
@@ -140,7 +168,6 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-
 
 /*estabelecimento-etapa*/
 .item.etapa-ano {
@@ -151,12 +178,25 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-.item.etapa-titulo-g {grid-column: span 8; background-color: #efefef;}
-.item.etapa-g {grid-column: span 8;}
-.item.etapa-titulo-p {grid-column: span 4; background-color: #efefef;}
-.item.etapa-p {grid-column: span 4;}
-.item.etapa-titulo-cha {grid-column: span 4; background-color: #efefef;}
-.item.etapa-cha {grid-column: span 4;}
+.item.etapa-titulo-g {
+    grid-column: span 8;
+    font-size: 6px;
+    background-color: #efefef;}
+.item.etapa-g {
+    grid-column: span 8;
+    font-weight: bold}
+.item.etapa-titulo-p {
+    grid-column: span 4;
+    background-color: #efefef;}
+.item.etapa-p {
+    grid-column: span 4;
+    font-weight: bold}
+.item.etapa-titulo-cha {
+    grid-column: span 4;
+    background-color: #efefef;}
+.item.etapa-cha {
+    grid-column: span 4;
+    font-weight: bold}
 .item.observacoes-etapa {grid-column: span 8;}
 .item.titulo-situacao-final {grid-column: span 6; background-color: #efefef;}
 .item.situacao-final {grid-column: span 6;}
@@ -179,14 +219,12 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-.item.conhecimento-2 {grid-row: span 3; grid-column: span 2;}
-.item.conhecimento-3 {grid-row: span 3; grid-column: span 3;}
-.item.conhecimento-4 {grid-row: span 3; grid-column: span 4;}
-.item.conhecimento-6 {grid-row: span 3; grid-column: span 6;}
+.item.area {
+    grid-row: span 3;
+    display: flex;
+    align-items: center;
+    justify-items: center;}
 .item.vazio {background-color: #cccccc;}
-.item.vazio-3 {grid-row: span 3; background-color: #cccccc;}
-.item.vazio-cha-3 {grid-column: span 3; background-color: #cccccc;}
-.item.vazio-cha-2 {grid-column: span 2; background-color: #cccccc;}
 
 
 /* --- Configuração de Impressão --- */
