@@ -104,7 +104,7 @@ form select {
 */
 
 /*Título (Histórico Escolar/Ensino Médio/Fundamental) */
-.item.titulo-doc {
+.item.titulo-historico {
     grid-column: span 42;
     text-align: center;
     font-size: 8pt;
@@ -127,41 +127,12 @@ form select {
 .item.label[for="nacionalidade"] { grid-column: span 2; }
 .item.valor[id="out-nacionalidade"] { grid-column: span 3; }
 
-/*ETAPAS*/
-/*linha superior*/
 .item.head {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;}
-.item.coluna-total-1 {
-    grid-row: span 11;
-    writing-mode: vertical-lr;
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    transform: rotate(180deg);
-    transform-origin: center center;
-    font-weight: bold;}
-.item.coluna-total-2 {
-    grid-row: span 10;
-    writing-mode: vertical-lr;
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    transform: rotate(180deg);
-    transform-origin: center center;
-    font-weight: bold}
-.item.coluna-cha-1 {
-    grid-row: span 11;
-    writing-mode: vertical-lr;
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    transform: rotate(180deg);
-    transform-origin: center center;}
-.item.coluna-cha-2 {
-    grid-row: span 10;
+.item.coluna {
     writing-mode: vertical-lr;
     display: flex;
     justify-content: left; 
@@ -169,48 +140,11 @@ form select {
     transform: rotate(180deg);
     transform-origin: center center;}
 
-/*estabelecimento-etapa*/
-.item.etapa-ano {
-    grid-row: span 13;
-    writing-mode: vertical-lr;
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    transform: rotate(180deg);
-    transform-origin: center center;}
-.item.etapa-titulo-g {
-    grid-column: span 8;
+.item.titulo {
     font-size: 6px;
     background-color: #efefef;}
-.item.etapa-g {
-    grid-column: span 8;
-    font-weight: bold}
-.item.etapa-titulo-p {
-    grid-column: span 4;
-    background-color: #efefef;}
-.item.etapa-p {
-    grid-column: span 4;
-    font-weight: bold}
-.item.etapa-titulo-cha {
-    grid-column: span 4;
-    background-color: #efefef;}
-.item.etapa-cha {
-    grid-column: span 4;
-    font-weight: bold}
-.item.observacoes-etapa {grid-column: span 8;}
-.item.titulo-situacao-final {grid-column: span 6; background-color: #efefef;}
-.item.situacao-final {grid-column: span 6;}
+.item.info {font-weight: bold;}
 
-/*avaliacoes*/
-.item.apr-cha-fal {grid-column: span 3;}
-.item.notas
-.item.cha {
-    writing-mode: vertical-lr;
-    display: flex;
-    justify-content: left; 
-    align-items: center;
-    transform: rotate(180deg);
-    transform-origin: center center;}
 .item.disciplina {
     grid-row: span 7;
     writing-mode: vertical-lr;
@@ -223,8 +157,21 @@ form select {
     grid-row: span 3;
     display: flex;
     align-items: center;
-    justify-items: center;}
+    justify-content: center;}
 .item.vazio {background-color: #cccccc;}
+
+
+
+/*AUXILIARES*/
+.span-2 {grid-column: span 2;}
+.span-3 {grid-column: span 3;}
+.span-4 {grid-column: span 4;}
+.span-6 {grid-column: span 6;}
+.span-8 {grid-column: span 8;}
+.row-10 {grid-row: span 10;}
+.row-11 {grid-row: span 11;}
+.row-13 {grid-row: span 13;}
+
 
 
 /* --- Configuração de Impressão --- */
