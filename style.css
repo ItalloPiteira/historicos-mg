@@ -110,6 +110,7 @@ form select {
     font-size: 8pt;
     font-weight: bold;
     padding: 10px;
+    background-color: #cccccc;
 }
 
 /*Nome e Data (Ex: Label=2, Valor=6, Label=2, Valor=2 = 12 colunas) */
@@ -150,14 +151,14 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-.item.etapa-titulo-g {grid-column: span 8; background-color: #7b7b7b;}
+.item.etapa-titulo-g {grid-column: span 8; background-color: #efefef;}
 .item.etapa-g {grid-column: span 8;}
-.item.etapa-titulo-p {grid-column: span 4; background-color: #7b7b7b;}
+.item.etapa-titulo-p {grid-column: span 4; background-color: #efefef;}
 .item.etapa-p {grid-column: span 4;}
-.item.etapa-titulo-cha {grid-column: span 4; background-color: #7b7b7b;}
+.item.etapa-titulo-cha {grid-column: span 4; background-color: #efefef;}
 .item.etapa-cha {grid-column: span 4;}
 .item.observacoes-etapa {grid-column: span 8;}
-.item.titulo-situacao-final {grid-column: span 6; background-color: #7b7b7b;}
+.item.titulo-situacao-final {grid-column: span 6; background-color: #efefef;}
 .item.situacao-final {grid-column: span 6;}
 
 /*avaliacoes*/
@@ -170,7 +171,7 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-.item.disciplina-subtotal {
+.item.disciplina {
     grid-row: span 7;
     writing-mode: vertical-lr;
     display: flex;
@@ -182,10 +183,10 @@ form select {
 .item.conhecimento-3 {grid-row: span 3; grid-column: span 3;}
 .item.conhecimento-4 {grid-row: span 3; grid-column: span 4;}
 .item.conhecimento-6 {grid-row: span 3; grid-column: span 6;}
-.item.vazio {background-color: #8d8d8d;}
-.item.vazio-3 {grid-row: span 3; background-color: #acacac;}
-.item.vazio-cha-3 {grid-column: span 3; background-color: #8d8d8d;}
-.item.vazio-cha-2 {grid-column: span 2; background-color: #8d8d8d;}
+.item.vazio {background-color: #cccccc;}
+.item.vazio-3 {grid-row: span 3; background-color: #cccccc;}
+.item.vazio-cha-3 {grid-column: span 3; background-color: #cccccc;}
+.item.vazio-cha-2 {grid-column: span 2; background-color: #cccccc;}
 
 
 /* --- Configuração de Impressão --- */
