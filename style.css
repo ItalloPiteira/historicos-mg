@@ -77,9 +77,9 @@ form select {
 /* O Grid do Histórico (Frente) */
 .historico-grid-frente {
     display: grid;
-    border-collapse: collapse;
+    gap: 0;
     grid-template-columns: repeat(42, 1fr);
-    border: 1px solid black; /* Borda externa do histórico */
+    border: 1px solid black; 
 }
 
 /* Estilo padrão de cada "célula" (item) do grid */
@@ -135,10 +135,12 @@ form select {
 .item.coluna {
     writing-mode: vertical-lr;
     display: flex;
-    justify-content: left; 
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
+.meio {justify-content: center}
+.baixo {justify-content: left}
+
 
 .item.titulo {
     font-size: 6px;
