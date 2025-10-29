@@ -79,6 +79,13 @@ form select {
     display: grid;
     gap: 0;
     grid-template-columns: repeat(42, 1fr);
+    grid-template-rows:
+    5.1666mm 3.1mm 8.857mm 3.1mm 3.838mm 5.1666mm /*informações da escola*/
+    5.1666mm 3.6904mm 10.48mm 3.6904mm 3.6904mm 3.6904mm 3.6904mm 3.6904mm 3.6904mm /*declaração*/
+    4.7237mm 3.6904mm 2.6571mm 4.1332mm 2.6571mm 4.1332mm 2.6571mm 4.1332mm 4.1332mm 4.1332mm 4.1332mm 16.2378mm 2.6571mm 6.6427mm 2.6571mm /*1 ANO*/
+    2.6571mm 4.1332mm 2.6571mm 4.1332mm 2.6571mm 4.1332mm 4.1332mm 4.1332mm 4.1332mm 16.2378mm 2.6571mm 6.6427mm 2.6571mm /*2 ANO*/
+    2.6571mm 4.1332mm 2.6571mm 4.1332mm 2.6571mm 4.1332mm 4.1332mm 4.1332mm 4.1332mm 16.2378mm 2.6571mm 6.6427mm 2.6571mm /*3 ANO*/
+    18.0192mm; /*observações gerais*/
     border: 1px solid black; 
 }
 
