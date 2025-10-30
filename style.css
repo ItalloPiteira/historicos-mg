@@ -70,14 +70,13 @@ form select {
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     box-sizing: border-box; /* Importante para o padding não somar à largura */
-    font-size: 3pt; /* Tamanho de fonte comum para documentos */
+    font-size: 6pt; /* Tamanho de fonte comum para documentos */
     color: black;
 }
 
 /* O Grid do Histórico (Frente) */
 .historico-grid-frente {
     display: grid;
-    gap: 0;
     grid-template-columns: repeat(42, 1fr);
     grid-template-rows: 
         5.1666mm /* 35 */
@@ -137,65 +136,47 @@ form select {
         6.6427mm /* 45 */
         2.6571mm /* 18 */
         18.0192mm; /* 122 */
-    border: 1px solid black; 
+    box-sizing: border-box;
+    border: 1pt solid #000;
 }
 
 /* Estilo padrão de cada "célula" (item) do grid */
 .historico-grid-frente > .item {
-    border: 1px solid black; /* Borda interna da célula */
+    background: white;
     padding: 4px;
     box-sizing: border-box;
-    min-height: 16.2px; /* Altura mínima da célula */
-    overflow: hidden; /* Evita que o texto vaze */
+    overflow: hidden;
     word-break: break-word;
+    position: relative;
+    z-index: 0;
 }
 
-/* --- CONTROLANDO O GRID (O "pedaço" que você pediu) ---
-   Aqui você define quantas colunas cada célula ocupa.
-   A soma em cada "linha" visual deve ser 12.
-*/
-
-/*Cabeçalho (Ex: 2 + 5 + 5 = 12 colunas)
-.item.logo { grid-column: span 2; }
-.item.gov { grid-column: span 5; text-align: center; font-weight: bold; }
-.item.sec { grid-column: span 5; text-align: center; font-weight: bold; }
-*/
-
-/*Título (Histórico Escolar/Ensino Médio/Fundamental) */
 .item.titulo-historico {
     grid-column: span 42;
     text-align: center;
-    font-size: 3pt;
     font-weight: bold;
-    padding: 10px;
     background-color: #cccccc;
 }
 
-/*Nome e Data (Ex: Label=2, Valor=6, Label=2, Valor=2 = 12 colunas) */
-.item.label { font-weight: bold; background-color: #f9f9f9; }
-.item.nome-completo { grid-column: span 6; }
-/* (O label "Nome do Aluno" usa 'span 2' por padrão) */
-/* (O label "Data Nasc" usa 'span 2' por padrão) */
-/* (O valor "DataNasc" usa 'span 2' por padrão) */
-
-/*(Ex: L=2, V=3, L=1, V=1, L=2, V=3 = 12 colunas) */
-.item.valor[id="out-naturalidade"] { grid-column: span 3; }
-.item.label[for="ufNaturalidade"] { grid-column: span 1; }
-.item.valor[id="out-ufNaturalidade"] { grid-column: span 1; }
-.item.label[for="nacionalidade"] { grid-column: span 2; }
-.item.valor[id="out-nacionalidade"] { grid-column: span 3; }
-
-.item.escola {
+.item.dados-escola {
     grid-column: span 30;
     display: flex;
-    align-items: center;
+    align-items: bottom;
     justify-content: center;}
+
+.item.desc-escola {
+    grid-column: span 30;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: 4pt}
 
 .item.head {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;}
+
 .item.coluna {
     writing-mode: vertical-lr;
     display: flex;
@@ -219,16 +200,17 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
+
 .item.area {
     grid-row: span 3;
     display: flex;
     align-items: center;
     justify-content: center;}
+
 .item.vazio {background-color: #cccccc;}
 
-
-
 /*AUXILIARES*/
+/*SPAN*/
 .span-2 {grid-column: span 2;}
 .span-3 {grid-column: span 3;}
 .span-4 {grid-column: span 4;}
@@ -238,10 +220,18 @@ form select {
 .row-10 {grid-row: span 10;}
 .row-11 {grid-row: span 11;}
 .row-13 {grid-row: span 13;}
+/*BORDAS*/
+.sem-borda {border: none;}
+.bottom {border-bottom: 1pt solid black;}
+.top {border-top: 1pt solid black;}
+.left {border-left: 1pt solid black;}
+.right {border-right: 1pt solid black;}
+.dot-bottom {border-bottom: 1pt dotted black;}
+.dot-top {border-top: 1pt dotted black;}
+.dot-left {border-left: 1pt dotted black;}
+.dot-right {border-right: 1pt dotted black;}
 
-
-
-/* --- Configuração de Impressão --- */
+/*IMPRESSÃO*/
 @media print {
     body {
         background-color: white; /* Fundo branco na impressão */
