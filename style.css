@@ -148,15 +148,13 @@ form select {
     overflow: hidden;
     word-break: break-word;
     position: relative;
-    z-index: 0;
-}
+    z-index: 0;}
 
 .item.titulo-historico {
     grid-column: span 42;
     text-align: center;
     font-weight: bold;
-    background-color: #cccccc;
-}
+    background-color: #cccccc;}
 
 .item.dados-escola {
     grid-column: span 30;
@@ -183,9 +181,8 @@ form select {
     align-items: center;
     transform: rotate(180deg);
     transform-origin: center center;}
-.meio {justify-content: center}
-.baixo {justify-content: left}
-
+.baixa {justify-content: left}
+/*Para uso com coluna*/
 
 .item.titulo {
     font-size: 3px;
@@ -221,15 +218,24 @@ form select {
 .row-11 {grid-row: span 11;}
 .row-13 {grid-row: span 13;}
 /*BORDAS*/
-.sem-borda {border: none;}
-.bottom {border-bottom: 1pt solid black;}
-.top {border-top: 1pt solid black;}
-.left {border-left: 1pt solid black;}
-.right {border-right: 1pt solid black;}
-.dot-bottom {border-bottom: 1pt dotted black;}
-.dot-top {border-top: 1pt dotted black;}
-.dot-left {border-left: 1pt dotted black;}
-.dot-right {border-right: 1pt dotted black;}
+.border-none {border: none;}
+.border-bottom {border-bottom: 1pt solid black;}
+.border-top {border-top: 1pt solid black;}
+.border-left {border-left: 1pt solid black;}
+.border-right {border-right: 1pt solid black;}
+.dotted-bottom {border-bottom: 1pt dotted black;}
+.dotted-top {border-top: 1pt dotted black;}
+.dotted-left {border-left: 1pt dotted black;}
+.dotted-right {border-right: 1pt dotted black;}
+/*FORMATAÇAO DE TEXTO*/
+.meio {align-self: center;}
+.inicio {align-self: start;}
+.fim {align-self: end;}
+.centro {text-align: center;}
+.esquerda {text-align: left;}
+.direita {text-align: right;}
+.justificado {text-align: justify;}
+
 
 /*IMPRESSÃO*/
 @media print {
