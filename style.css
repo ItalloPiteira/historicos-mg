@@ -194,6 +194,7 @@ form select {
 
 .item.disciplina {
     grid-row: span 7;
+    padding: 1.5px;
     writing-mode: vertical-rl;
     display: flex;
     justify-content: left; 
@@ -215,11 +216,26 @@ form select {
     grid-column: span 8;
 }
 
-.item.apr {
+.item.avaliacao {
     grid-column: span 3;
     text-align: center;
     font-size: 5px;}
 
+.item.nota {
+    font-size: 6px;
+    text-align: center;
+}
+
+.item.cha{
+    display: flex;
+    writing-mode: vertical-rl;
+    justify-content: left; 
+    transform-origin: initial;
+    justify-content: center; 
+    align-items: center;
+    transform-origin: center center;}
+
+.item.falta
     
 /*AUXILIARES*/
 /*SPAN*/
@@ -252,9 +268,16 @@ form select {
 .direita {text-align: right;}
 .justificado {text-align: justify;}
 /*TAMANHO TEXTO*/
-.fs-7 {font-size: 2.47mm;}
-.fs-8 {font-size: 2.82mm;}
-.fs-9 {font-size: 3.17mm;}
+/* --- AUXILIARES DE TAMANHO DE TEXTO (PX) --- */
+.fs-2 {font-size: 2px;}
+.fs-3 {font-size: 3px;}
+.fs-4 {font-size: 4px;}
+.fs-5 {font-size: 5px;}
+.fs-6 {font-size: 6px;}
+.fs-7 {font-size: 7px;}
+.fs-8 {font-size: 8px;}
+.fs-9 {font-size: 9px;}
+.fs-10 {font-size: 10px;}
 
 
 
