@@ -1,7 +1,6 @@
-/* --- Estilos Gerais --- */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Fundo cinza fora da folha */
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +143,7 @@ form select {
 /* Estilo padrão de cada "célula" (item) do grid */
 .historico-grid-frente > .item {
     background: white;
-    padding: 3.5px;
+    padding: 0.5px;
     box-sizing: border-box;
     overflow: hidden;
     word-break: break-word;
@@ -178,12 +177,14 @@ form select {
     font-weight: bold;}
 
 .item.coluna {
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     display: flex;
+    justify-content: left; 
+    transform-origin: initial;
+    justify-content: center; 
     align-items: center;
-    transform: rotate(180deg);
     transform-origin: center center;}
-.baixa {justify-content: left}
+.baixa {justify-content: flex-end}
 /*Para uso com coluna*/
 
 .item.titulo {
@@ -193,11 +194,12 @@ form select {
 
 .item.disciplina {
     grid-row: span 7;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     display: flex;
     justify-content: left; 
+    transform-origin: initial;
+    justify-content: flex-end; 
     align-items: center;
-    transform: rotate(180deg);
     transform-origin: center center;}
 
 .item.area {
@@ -208,10 +210,14 @@ form select {
 
 .item.vazio {background-color: #cccccc;}
 
+.item.observacoes {
+    font-size: 4pt;
+    grid-column: span 8;
+}
+
 .item.apr {
     grid-column: span 3;
     text-align: center;
-    justify-content: center;
     font-size: 5px;}
 
     
