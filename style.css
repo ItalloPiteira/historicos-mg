@@ -136,7 +136,7 @@ form select {
     border: 1pt solid #000;
 }
 
-/* Estilo padrão de cada "célula" (item) do grid */
+/* Estilo padrão para todos os items*/
 .historico-grid-frente > .item {
     background: white;
     padding: 0.5px;
@@ -145,7 +145,9 @@ form select {
     word-break: break-word;
     position: relative;
     z-index: 0;
-    align-self: stretch;}
+    text-align: center;
+    align-self: stretch;
+    font-size: 6pt;}
 
 .item.titulo-historico {
     grid-column: span 42;
@@ -183,10 +185,39 @@ form select {
 .baixa {justify-content: flex-end}
 /*Para uso com coluna*/
 
-.item.titulo {
+.item.area-4 {
+    grid-column: span 4;
+    grid-row: span 3;
+    text-align: center;
+    font-size: 5pt;}
+.item.area-3 {
+    grid-column: span 3;
+    grid-row: span 3;
+    text-align: center;
+    font-size: 5pt;}
+.item.area-6 {
+    grid-column: span 6;
+    grid-row: span 3;
+    text-align: center;
+    font-size: 5pt;}
+.item.area-2 {
+    grid-column: span 2;
+    grid-row: span 3;
+    text-align: center;
+    font-size: 5pt;}
+
+.item.titulo-ano {
+    font-size: 4px;
+    background-color: #efefef;
+    text-align: left;}
+.item.info-ano {
+    font-weight: bold;
+    text-align: left;}
+
+.item.titulo-cha {
     font-size: 4px;
     background-color: #efefef;}
-.item.info {font-weight: bold;}
+.item.info-cha {font-weight: bold;}
 
 .item.disciplina {
     grid-row: span 7;
@@ -199,28 +230,21 @@ form select {
     align-items: center;
     transform-origin: center center;}
 
-.item.area {
-    grid-row: span 3;
-    text-align: center;
-    
-    font-size: 6px;}
-
 .item.vazio {background-color: #cccccc;}
+.item.vazio-span-2 {
+    grid-column: span 2;
+    background-color: #cccccc;}
 
 .item.observacoes {
     font-size: 4pt;
     grid-column: span 8;
-}
+    text-align: left;}
 
 .item.avaliacao {
     grid-column: span 3;
-    text-align: center;
     font-size: 5px;}
 
-.item.nota {
-    font-size: 6px;
-    text-align: center;
-}
+.item.nota {text-align: center;}
 
 .item.cha{
     display: flex;
@@ -232,38 +256,43 @@ form select {
     transform-origin: center center;}
 
 .item.falta
-    
-/*AUXILIARES*/
+
+/*CLASSES UTILITÁRIAS*/
 /*SPAN*/
 .span-2 {grid-column: span 2;}
 .span-3 {grid-column: span 3;}
 .span-4 {grid-column: span 4;}
 .span-6 {grid-column: span 6;}
 .span-8 {grid-column: span 8;}
+.span-10 {grid-column: span 10;}
+.span-13 {grid-column: span 13;}
+.span-16 {grid-column: span 16;}
+.row-2 {grid-row: span 2;}
 .row-3 {grid-row: span 3;}
 .row-6 {grid-row: span 6;}
 .row-10 {grid-row: span 10;}
 .row-11 {grid-row: span 11;}
 .row-13 {grid-row: span 13;}
 /*BORDAS*/
-.bordered {border: 1pt solid black}
-.border-none {border: none;}
-.border-bottom {border-bottom: 1pt solid black;}
-.border-top {border-top: 1pt solid black;}
-.border-left {border-left: 1pt solid black;}
-.border-right {border-right: 1pt solid black;}
-.dotted-bottom {border-bottom: 1pt dotted black;}
-.dotted-top {border-top: 1pt dotted black;}
-.dotted-left {border-left: 1pt dotted black;}
-.dotted-right {border-right: 1pt dotted black;}
+.b-full {border: 1pt solid black}
+.b-none {border: none;}
+.b-bottom {border-bottom: 1pt solid black;}
+.b-top {border-top: 1pt solid black;}
+.b-left {border-left: 1pt solid black;}
+.b-right {border-right: 1pt solid black;}
+.d-bottom {border-bottom: 1pt dotted black;}
+.d-top {border-top: 1pt dotted black;}
+.d-left {border-left: 1pt dotted black;}
+.d-right {border-right: 1pt dotted black;}
 /*FORMATAÇAO DE TEXTO*/
 .meio {align-self: center;}
 .inicio {align-self: start;}
 .fim {align-self: end;}
-.centro {text-align: center;}
+.center {text-align: center;}
 .esquerda {text-align: left;}
-.direita {text-align: right;}
-.justificado {text-align: justify;}
+.dir {text-align: right;}
+.just {text-align: justify;}
+.bold {font-weight: bold;}
 /*TAMANHO TEXTO*/
 /* --- AUXILIARES DE TAMANHO DE TEXTO (PX) --- */
 .fs-2 {font-size: 2px;}
