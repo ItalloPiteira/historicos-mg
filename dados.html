@@ -3,73 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrada de Dados</title>
+    <title>Entrada de Dados - históricos.mg</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Dados do Aluno</h2>
-        <form id="alunoForm">
-            <label for="nome">1. Nome do Aluno:</label>
-            <input type="text" id="nome" name="nome" required>
+
+    <form id="alunoForm" class="container-dados">
+        
+        <div class="id-card-form">
             
-            <label for="dataNasc">2. Data de Nascimento:</label>
-            <input type="date" id="dataNasc" name="dataNasc">
+            <div class="id-header">
+                <div class="form-group" style="flex-basis: 60%;">
+                    <label for="orgaoExp">10. Órgão Expedidor</label>
+                    <input type="text" id="orgaoExp" name="orgaoExp" placeholder="Ex: SECRETARIA DE SEGURANCA PUBLICA">
+                </div>
+                <div class="form-group" style="flex-basis: 35%;">
+                    <label for="ufDocumento">11. UF</label>
+                    <input type="text" id="ufDocumento" name="ufDocumento" maxlength="2" placeholder="Ex: MG">
+                </div>
+            </div>
+
+            <div class="id-body">
+                
+                <div class="id-foto-silhueta">
+                    
+                    <br>(Local da Foto)
+                </div>
+                
+                <div class="id-info-colunas">
+                    
+                    <div class="id-info-principal">
+                        <div class="form-group">
+                            <label for="nome">1. Nome do Aluno</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="filiacao1">7. Filiação 1</label>
+                            <input type="text" id="filiacao1" name="filiacao1">
+                        </div>
+                        <div class="form-group">
+                            <label for="filiacao2">8. Filiação 2</label>
+                            <input type="text" id="filiacao2" name="filiacao2">
+                        </div>
+                    </div>
+                    
+                    <div class="id-info-secundaria">
+                        <div class="form-group">
+                            <label for="dataNasc">2. Data de Nascimento</label>
+                            <input type="date" id="dataNasc" name="dataNasc">
+                        </div>
+                        <div class="form-group">
+                            <label for="naturalidade">3. Naturalidade</label>
+                            <input type="text" id="naturalidade" name="naturalidade" placeholder="Município">
+                        </div>
+                         <div class="form-group">
+                            <label for="ufNaturalidade">4. UF Nasc.</label>
+                            <input type="text" id="ufNaturalidade" name="ufNaturalidade" maxlength="2" placeholder="UF">
+                        </div>
+                        <div class="form-group">
+                            <label for="nacionalidade">5. Nacionalidade</label>
+                            <input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira">
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <label for="naturalidade">3. Naturalidade:</label>
-            <input type="text" id="naturalidade" name="naturalidade">
+            <div class="id-footer">
+                <div class="form-group" style="flex-basis: 30%;">
+                    <label for="tipoDoc">Tipo Documento</label>
+                    <select id="tipoDoc" name="tipoDoc">
+                        <option value="RG">RG</option>
+                        <option value="CPF">CPF</option>
+                        <option value="Cert. Nasc.">Cert. Nasc.</option>
+                    </select>
+                </div>
+                <div class="form-group" style="flex-basis: 40%;">
+                    <label for="documento">9. Número</label>
+                    <input type="text" id="documento" name="documento">
+                </div>
+                <div class="form-group" style="flex-basis: 30%;">
+                    <label for="dataExpedicao">Data de Expedição</label>
+                    <input type="date" id="dataExpedicao" name="dataExpedicao">
+                </div>
+            </div>
+        </div>
+        <div class="school-info-form">
+            <h4>Informações Escolares</h4>
             
-            <label for="ufNaturalidade">4. UF (Naturalidade):</label>
-            <input type="text" id="ufNaturalidade" name="ufNaturalidade" maxlength="2">
+            <div class="form-group">
+                <label for="nivelEnsino">14. Nível de Ensino</label>
+                <select id="nivelEnsino" name="nivelEnsino">
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="anoSerie">15. Modalidade</label>
+                <select id="anoSerie" name="anoSerie">
+                    <option value="Ano">Ano</option>
+                    <option value="Série">Série</option>
+                    <option value="Período">Período</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="etapa">13. Etapa</label>
+                <input type="text" id="etapa" name="etapa" placeholder="Ex: 9º Ano, 3ª Série">
+            </div>
+
+            <div class="form-group">
+                <label for="dataConclusao">12. Data de Conclusão</label>
+                <input type="date" id="dataConclusao" name="dataConclusao">
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">6. Sexo</label>
+                <select id="sexo" name="sexo">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
+            </div>
             
-            <label for="nacionalidade">5. Nacionalidade:</label>
-            <input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira">
-            
-            <label for="sexo">6. Sexo:</label>
-            <select id="sexo" name="sexo">
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-            </select>
-            
-            <label for="filiacao1">7. Filiação 1:</label>
-            <input type="text" id="filiacao1" name="filiacao1">
-            
-            <label for="filiacao2">8. Filiação 2:</label>
-            <input type="text" id="filiacao2" name="filiacao2">
-            
-            <label for="documento">9. Carteira de Identidade ou CPF:</label>
-            <input type="text" id="documento" name="documento">
-            
-            <label for="orgaoExp">10. Órgão Expedidor:</label>
-            <input type="text" id="orgaoExp" name="orgaoExp">
-            
-            <label for="ufDocumento">11. UF (Documento):</label>
-            <input type="text" id="ufDocumento" name="ufDocumento" maxlength="2">
-            
-            <label for="dataConclusao">12. Data de Conclusão:</label>
-            <input type="date" id="dataConclusao" name="dataConclusao">
-            
-            <label for="anoSerie">13. Ano, Período ou Série:</label>
-            <select id="anoSerie" name="anoSerie">
-                <option value="1">1º Ano</option>
-                <option value="2">2º Ano</option>
-                <option value="3">3º Ano</option>
-                <option value="4">4º Ano</option>
-                <option value="5">5º Ano</option>
-                <option value="6">6º Ano</option>
-                <option value="7">7º Ano</option>
-                <option value="8">8º Ano</option>
-                <option value="9">9º Ano</option>
-            </select>
-            
-            <label for="nivelEnsino">14. Nível de Ensino:</label>
-            <select id="nivelEnsino" name="nivelEnsino">
-                <option value="fundamental">Ensino Fundamental</option>
-                <option value="medio">Ensino Médio</option>
-            </select>
-            
-            <a href="historico-frente.html" class="btn">Visualizar Histórico (Frente)</a>
+        </div>
         </form>
+    
+    <div class="container" style="text-align: center; max-width: 1200px;">
+         <a href="historico-frente.html" class="btn">Visualizar Histórico (Frente)</a>
     </div>
+
 </body>
 </html>
